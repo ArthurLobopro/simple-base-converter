@@ -69,13 +69,13 @@ export const dec_to_hex = (dec: number) => {
  * @returns Decimal number
  */
 export const hex_to_dec = (hex: string) => {
-    const hex_digits = String(hex).toUpperCase().split('').reverse().map( digit => {
+    const hex_digits = String(hex).toUpperCase().split('').reverse().map(digit => {
         const number_digit = Number(digit)
         return !Number.isNaN(number_digit) ? number_digit : hex_numbers[digit]
     })
-    
-    const dec = hex_digits.map( (digit, index) => digit * 16 ** index).reduce((total, value) => total + value, 0)
-    
+
+    const dec = hex_digits.map((digit, index) => digit * 16 ** index).reduce((total, value) => total + value, 0)
+
     return dec
 }
 

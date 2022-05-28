@@ -2,10 +2,7 @@
   "name": "simple-base-converter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "npm tsc"
-  },
+  "main": "./dist/index.js",
   "keywords": [
     "base",
     "converter",
@@ -17,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.6.3"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
